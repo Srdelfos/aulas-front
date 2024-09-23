@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Picture</title>
+    </head>
+<body>
+    <h1>Picture</h1>
+    <p>A tag <code>picture</code> permite que diferentes versões de uma imagem sejam carregadas com base no tamanho da tela.</p>
+    <p>O uso desta tag faz parte de uma ténica de design chamadas <b>Art Direction</b>.</p>
+
+    <figure>
+    <picture>
+
+        <!-- Sempre do maior para o menor -->
+
+        <!-- Telas a partir de 800px? Imagem frande -->
+        <source media="(min-width: 800px)" srcset="imagens/ideias.jpg">
+
+        <!-- Telas a partir de 500px? Imagem media -->
+        <source media="(min-width: 500px)" srcset="imagens/ideias-media.jpg">
+
+        <!-- Telas menores do que o especificado? Imagem padrão/pequena. Isto também é chamada de "fallback" da imagem. -->
+        <img src="imagens/ideias-pequena.jpg" alt="">
+    </picture>
+    <figcaption>Toró de ideias</figcaption>
+    </figure>
+    
+</body>
+</html>

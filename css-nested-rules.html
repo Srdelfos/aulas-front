@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+<style>
+    /* Regra ""PAI" */
+.container {
+    background-color: lightblue;
+    margin: auto;
+    width: 80%;
+    padding: 1%;
+
+    /* Regra ""FILHO" */
+    .topo {
+        background-color: rgb(199, 197, 197);
+        text-align: center;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+
+        &:hover {color: red;}
+        }
+    }   
+}
+
+.conteudo{
+    background-color: rgb(199, 197, 197);
+    padding: 1%;
+
+    .produto { 
+        border: solid 2px;
+        margin: 10px;
+
+    h3 {
+        text-transform: uppercase;
+        color: red;
+        }    
+    }
+}
+
+</style>
+
+    </head>
+    <body>
+
+        <h1>Aninhamentos em regras CSS</h1>
+        <p><i>(Nesting/Nested Rules)</i></p>
+        <hr>
+
+        <div class="container">
+            <header class="topo">
+                <h2>Exemplo</h2>
+                <nav>
+                    <a href="">Link 1</a>
+                    <a href="">Link 2</a>
+                </nav>
+            </header>
+
+            <main class="conteudo">
+                <article class="produto">
+                    <h3>Teste 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta similique tenetur aspernatur molestias perspiciatis corporis labore consequatur quis fugiat omnis, voluptate aliquam rem, inventore, animi saepe rerum itaque nam?</p>
+                </article>
+                <article class="produto">
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </article>
+            </main>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+<style>
+
+/* Adicionamos o ::after e o ::before
+para garantir a mudança do Box Model também para qualquer espaço/conteúdo
+criado DENTRO das tags (tanto depois quanto antes de cada conteúdo) */
+/* É melhor ser usado dessa forma: *, *::after, *::before { box-sizing: border-box;} */
+*, *::after, *::before { box-sizing: border-box;}
+
+body {font-family: verdana;}
+
+.container {
+    border: solid 1px;
+    padding: 4px 0;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(197, 197, 197);
+
+    /* Eixo/Axis do Flexbox  
+    Diração ROW/LINHA (padrão) ou 
+    Direção COLUMN/COLUNA */
+
+    /* flex-direction: column; */
+    flex-direction: row;
+
+
+    /* Habilitando o Flexbox */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    /* "Quebra" o container caso não tenha mais espaço para o layout lado a lado. */
+    flex-wrap: wrap; 
+
+    /* Lacuna entre elementos  */
+    gap: 10px;
+}
+
+img {max-width: 100%;}
+
+article {
+    background-color: white;
+    width: 30%;
+    padding: 4px;
+    /* margin-bottom: 10px;  */ /*substituído pelo "gap: 10px", inserido no container, porém ambos estão corretos */
+
+    h2 { font-size: 18px;}
+    p { font-size: 14px;}
+}
+
+
+</style>
+
+</head>
+<body>
+
+    <h1>Trabalhando com Flexbox</h1> <!--Pesquisar Grid Layout-->
+    <hr>
+
+    <p>Flexbox é um mecanismo que permite aplicar facilmente recursos de alinhamento, espaçamento e distribuição de elementos na página. Muito útil na elaboração de layouts comuns, baseados em linhas e colunas.</p>
+
+    <div class="container">
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="Logo Apple">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="Logo IBM">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="Logo Microsoft">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="Logo Apple">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="Logo IBM">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="Logo Microsoft">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-apple.jpg" alt="Logo Apple">
+            <h2>Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-ibm.jpg" alt="Logo IBM">
+            <h2>IBM</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+
+        <article>
+            <img src="imagens/mini-microsoft.jpg" alt="Logo Microsoft">
+            <h2>Microsoft</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, inventore!</p>
+        </article>
+    </div>
+    
+</body>
+</html>

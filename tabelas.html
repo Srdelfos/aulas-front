@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dados tabulados no HTML</title>
+    </head>
+    <body>
+        <h1 align="center">Exemplos de tabelas</h1>
+        <hr>
+
+        <table border="1">
+            <caption>Relação de Clientes</caption>
+            <thead>
+                <tr>
+                    <th>País</th>
+                    <th>Nome</th>
+                    <th>Cidade</th>
+                    <th>Contato</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <!-- rowspan - mesclagem de células VERTICALMENTE -->
+                    <td rowspan="5">Brasil</td>
+                    <td>Monkey D. Luffy</td>
+                    <td>Ilha Foosha</td>
+                    <td>11-11111-1111</td>
+                </tr>
+                <tr>
+                    <td>Gon Freecss</td>
+                    <td>Ilha da Baleia</td>
+                    <td>11-22222-2222</td>
+                </tr>
+                <tr>
+                    <td>Guts</td>
+                    <td>Midland</td>
+                    <td>11-33333-3333</td>
+                </tr>
+                <tr>
+                    <td>Naruto Uzumaki</td>
+                    <td>Vila da Folha</td>
+                    <td>11-44444-4444</td>
+                </tr>
+                <tr>
+                    <td>Thorfinn Thorsson</td>
+                    <td>Vinlandia</td>
+                    <td>11-55555-5555</td>
+                </tr>
+            </tbody>
+
+            <tfoot> <!-- Rodapé da Tabela (opcional)-->
+                <tr>
+                    <td colspan="4">Total de clientes: 5</td>
+                    <!-- Colspan mescla colunas/células, mescla horizontalmente -->
+                </tr>
+            </tfoot>
+
+        </table>
+        
+    </body>
+</html>

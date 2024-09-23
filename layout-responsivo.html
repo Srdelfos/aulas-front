@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo - Mobile First</title>
+
+<style>
+
+*, *::after, *::before {box-sizing: border-box;}
+
+html { font-size: 16px;}
+
+body {
+    font-family: verdana, sans-serif;
+    background-color: beige;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    box-shadow: black 0 0 10px;
+    padding: 1%;
+}
+
+.topo {
+    background-color: rgb(170, 66, 170);
+    text-align: center;
+}
+
+.menu { background-color: rgb(248, 248, 56); }
+
+.conteudo { background-color: rgb(148, 248, 148); }
+
+.um { background-color: rgb(61, 255, 61);}
+
+.dois { background-color: rgb(250, 176, 38);}
+
+.tres { background-color: rgb(216, 60, 60);}
+
+.rodape {background-color: aquamarine;}
+
+h2, p { padding: 0.5rem;}
+
+h1 { font-size: 2.5rem;}
+
+h2 { font-size: 1.3rem;}
+
+@media screen and (min-width: 550px) {
+    .topo { 
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        align-items: center;
+    }
+
+    .menu {
+        width: 50%;
+        height: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 60px;
+    }
+
+    h1 { margin-left: 60px;}
+
+    .conteudo{
+        display: flex;
+
+        /* É necessário habilitar a "quebra" dos elementos flex para que o terceiro article "caia", ou seja, vá para baixo dos dois primeiros. */
+        flex-wrap: wrap;
+
+        /* Alternativa 1 para o espaço entre os artigos. */
+        /*gap: 10px; */
+
+        /* Alternativa 2 para o espaço entre os artigos */
+        /* justify-content: space-between; */
+    }
+
+    .um { max-width: 30%;}
+
+    .dois { max-width: 70% }
+
+    /* Alternativa 3 para o espaço entre os artigos */
+    /* .tres { margin-top: 8px;} */
+}
+
+@media screen and (min-width: 860px) {
+    .conteudo {flex-wrap: nowrap;}
+
+    .um, .dois, .tres {width: 35%;}
+
+    html { font-size: 20px;}
+}
+
+</style>
+
+</head>
+<body>
+
+    <!-- header+main+footer: cria um em sequência do outro, pode ser usado com outras tags  -->
+    <div class="container">
+        <header class="topo">
+            <h1>Site</h1>
+            <nav class="menu">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+            </nav>
+        </header>
+
+        <main class="conteudo">
+            <article class="um">
+                <h2>Um</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed officiis reprehenderit animi accusantium unde beatae veritatis hic itaque modi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolores voluptatum temporibus ex nulla nobis voluptas reprehenderit illum impedit nihil.</p>
+            </article>
+
+            <article class="dois">
+                <h2>Dois</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed officiis reprehenderit animi accusantium unde beatae veritatis hic itaque modi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolores voluptatum temporibus ex nulla nobis voluptas reprehenderit illum impedit nihil.</p>
+            </article>
+
+            <article class="tres">
+                <h2>Três</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed officiis reprehenderit animi accusantium unde beatae veritatis hic itaque modi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolores voluptatum temporibus ex nulla nobis voluptas reprehenderit illum impedit nihil.</p>
+            </article>
+        </main>
+
+        <footer class="rodape">
+            <h2>Design Responsivo</h2>
+            <p>Exemplo de layout com Media Queries</p>
+        </footer>
+    </div>
+
+
+    
+</body>
+</html>

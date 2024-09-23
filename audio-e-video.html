@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Áudio com multimídia no HTML</title>
+    </head>
+    <body>
+
+        <h1>Trabalhando com multimídia no HTML</h1>
+        <hr>
+
+        <h2>Áudio</h2>
+        <!-- 
+        Para o áudio/vídeo ser reproduzido, deverá ser inserido o atributo "controls". 
+        Também pode ser usada o atributo "autoplay" para inicicar reprodução automática (não muito recomendado). 
+        --> 
+    
+        <h3>Exemplo 1: apenas com MP3 (navegadores modernos)</h3>
+        <audio controls src="multimidia/judas-priest.mp3"></audio>
+
+        <h3>Exemplo 2: com (pelo menos) dois formatos (navegadores antigos)</h3>
+       
+        <figure>
+        <figcaption>Ouça o clássico do Judas Priest</figcaption>
+        <audio controls>
+            <source src="multimidia/judas-priest.mp3" type="audio/mp3">
+            <source src="multimidia/judas-priest.ogg" type="audio/ogg">
+        <!-- 
+        Se o navegador não suportar a tag <audio>, daremos a opção do usuário baixar amúsica. Se quiser que apareça sempre o download da música, só deixar a tag fora do <audio> 
+        -->
+            <p><a href="multimidia/judas-priest.mp3">Faça o download da música</a></p>
+            <p><a href="multimidia/judas-priest.mp3">Faça o download da música</a></p>
+        </audio>
+        </figure>
+        
+        <p><a href="multimidia/judas-priest.mp3" download="ExemplodeMusica.mp3">Faça o download da música</a></p>
+
+        <h2>Vídeo</h2>
+        <h3>Exemplo 1: apenas MP4 (formato comum)</h3>
+        <video controls src="multimidia/pink-floyd.mp4"></video>
+
+        <h3>Exemplo 2: com (pelo menos) dois formatos (navegadores antigos)</h3>
+        <video controls>
+            <source src="multimidia/pink-floyd.mp4" type="video/mp4">
+            <source src="multimidia/pink-floyd.webm" type="video/webm">
+            <p><a href="multimidia/pink-floyd.mp4" download="PinkFloyd.mp4">Faça o download do vídeo</a></p>
+        </video>       
+        
+    </body>
+</html>

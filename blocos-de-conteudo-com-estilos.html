@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blocos Semânticos</title>
+        <style>
+            /* comentário no CSS - FOLHA DE ESTILO INTERNA */
+
+            /* Regras CSS */
+
+            html { scroll-behavior: smooth; }
+
+            h1{
+                color: rgb(119, 85, 34);
+                text-align: center;
+            }
+
+            p{
+                font-size: 22px;
+                font-style: italic;
+            }
+
+            hr {
+                height: 10px;
+                background-color: rgb(97, 65, 17);
+                border-color: black;
+                border-width: 4px;
+                border-style: solid;
+                border-radius: 6px;
+                opacity: 0.7;
+            }
+
+            h2{
+                text-transform: uppercase;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            body{
+                font-family: verdana;
+            }
+
+            h3{
+                text-align: right;
+                font-family: impact;
+                font-size: 20px
+                border-bottom-width: 4px;
+                border-bottom-style: solid;
+                border-bottom-color: orange;
+
+                /* font-weight: normal; - Remove o negrito da fonte */
+                font-weight: normal;
+
+                letter-spacing: 0.8px;
+                word-spacing: 2px;
+                text-decoration: overline;
+                text-decoration-thickness: 4px;
+                padding-right: 10px;
+            }
+
+            article{
+                background-color: rgb(135, 206, 250);
+                border-radius: 10px;
+                padding: 10px;
+                box-shadow: black 5px 5px;
+                margin-bottom: 20px;
+            }
+
+            header{
+                /* background: serve para dar um efeito com mais cores, normalmente seguido por um linear-gradient()
+                Um () é chamado de função*/
+               background: linear-gradient(to left, lightblue, blue, darkblue, transparent);
+               position: sticky;
+               top: 0;     
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+        <h1>(COM CSS INTERNO) Tags semânticas</h1>
+        <hr>
+
+        <!-- Com o atributo id"" referenciando o local em que voltar, dentro do href="" precisa ter o nome em que está o id="", porém com o sinal de # na frente. Exemplos abaixo: -->
+
+            <nav>
+                <ul>
+                    <li><a href="#classic">Classic Rock</a></li>
+                    <li><a href="#metal">Heavy Metal</a></li>
+                    <li><a href="#rock">Rock Progressivo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+
+        <!--Atalho: CTRL + X = Cortar  -->
+        <!-- Atalho - Ex: (p>lorem*3) - Vai gerar 03 parágrafos com o texto lorem ipsum -->
+
+        <!-- Atributo id="" cria uma área de navegação, na mesma página cada identificador precisa ter um nome diferente -->
+
+        <main>
+            <article>
+                <h2 id="classic">Classic Rock</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non iste neque doloribus in sed tenetur, at nobis eveniet explicabo voluptates voluptatibus dignissimos inventore deserunt, vel suscipit quis necessitatibus blanditiis quae.</p>
+                <p>Culpa, vel consequatur nihil at magni explicabo aut. Consectetur culpa doloribus odit officiis libero iusto recusandae vitae quis suscipit quisquam blanditiis, nisi molestias sequi similique omnis delectus cumque reprehenderit sit?</p>
+                <p>Nesciunt dolore, ab accusantium voluptatibus at itaque, magnam eos dolor libero labore est nemo ex officia tempora, esse aut ratione excepturi velit? Non commodi, veritatis eligendi sequi voluptates praesentium nobis!</p>
+                <p>Unde error consequatur adipisci aut consequuntur eos quia dignissimos accusantium mollitia dolore at, quos nihil a placeat odio tempora, velit eligendi. Repellendus voluptatum in esse officia molestias neque veniam eius?</p>
+                <p>Atque ullam porro minus enim praesentium aut quidem ipsum, sint vero similique quae delectus incidunt, expedita recusandae tempora minima, exercitationem perspiciatis aperiam veniam qui blanditiis. Obcaecati quam unde animi saepe?</p>
+
+                <section>
+                    <h3>Black Sabbath</h3>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aspernatur temporibus labore unde dignissimos perferendis voluptates suscipit! Accusamus velit consequuntur saepe. Eum non rem distinctio dolorum totam incidunt alias hic!</span></p>
+                </section>
+
+            </article>
+
+            <article id="metal">
+                <h2 >Heavy Metal</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo illum odio necessitatibus debitis, fugiat ipsum!</p>
+                <p>Autem pariatur, omnis quasi, corrupti perspiciatis at earum aspernatur sunt, ex provident sed nihil nostrum.</p>
+                <p>Accusantium odio delectus expedita voluptate hic, provident possimus, esse iusto blanditiis quasi sed animi dolorem!</p>
+                <p>Cum debitis officiis exercitationem, optio minus quo, odit porro libero, assumenda vel non possimus velit!</p>
+                <p>Cum odio accusantium ut dignissimos blanditiis nulla quia deleniti? Fuga nihil necessitatibus explicabo ipsum accusamus?</p>
+                <p>Nulla culpa esse omnis alias quis cupiditate voluptates dolores ut quasi odit? Quisquam, aspernatur quia.</p>
+                <p>Officia et a atque aspernatur esse nulla, fugiat aut, magnam impedit at soluta ex error!</p>
+
+                <section>
+                    <h3>Led Zeppelin</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </section>
+
+            </article>
+
+            <article id="rock">
+                <h2 >Rock Progressivo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae distinctio fugiat magni earum eius veniam molestias cumque quasi. Similique, vitae?</p>
+                <p>Exercitationem quas iure eveniet obcaecati, pariatur sapiente, sit necessitatibus, voluptates tempora quis adipisci omnis mollitia distinctio laboriosam neque in. Excepturi.</p>
+                <p>Consequatur totam inventore, alias quia nam eaque autem tempore? Facilis vero harum id culpa placeat! Inventore voluptatum dolore ea non.</p>
+                <p>Nisi ab, nam nostrum repellendus officia consequatur quisquam autem molestias minima, nulla atque blanditiis, voluptates doloremque repellat corrupti saepe provident!</p>
+                <p>Commodi minima quas sunt sit ratione maxime labore pariatur nemo quae fugiat, consectetur quidem error est minus qui ab at?</p>
+                <p>Quae porro ipsum explicabo voluptas doloremque error officiis perspiciatis ab quisquam eius sequi cumque, magni, repellendus fugit similique at magnam!</p>
+                <p>Facilis nostrum eligendi blanditiis ut debitis dolorem repellendus earum omnis odit eum temporibus, ratione iste vero. Tempora ratione laudantium odio.</p>
+                <p>Aliquid distinctio sunt assumenda laboriosam officiis quos totam dolorum, magni molestias magnam fugit ut perferendis veritatis recusandae iste ipsum ipsa?</p>
+            
+                <section>
+                    <h3>Deep Purple</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dicta aut deserunt eos asperiores dolore!</p>
+                </section>
+
+                    <aside>Saiba mais nos canais oficiais</aside>
+                    <ul>
+                        <li><a href="">Site Oficial</a></li>
+                        <li><a href="">Canal no Youtube</a></li>
+                        <li><a href="">Perfil Facebook</a></li>
+                    </ul>
+            </article>
+        </main>
+
+        <footer>
+          <h2>Exemplo de site com tags semânticas</h2>  
+          <p>Desenvolvido em <time datetime="2024-08-19"></time>19/08/2024 no Senac Penha</p>
+        </footer>
+
+    </body>
+    </html>
