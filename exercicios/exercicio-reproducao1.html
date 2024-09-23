@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício de reprodução </title>
+
+<style>
+
+*, *::after, *::before {box-sizing: border-box;}
+
+body {
+    font-family: Verdana;
+}
+
+html { font-size: 13px;}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #fbd97e;
+    background-image: linear-gradient(0deg, #fbd97e 0%, #eab42e 50%, #f7fb31 100%);
+
+    /* background-color: aqua; */
+}
+
+header {
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* position: 0;
+    z-index: 1000;
+    width: 100%; */
+    border-bottom: solid black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.topo {
+    background-color: white;
+    display: flex;
+    /* text-align: center; */
+    justify-content: space-evenly;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 8px;
+}
+
+article {
+    width: 47%;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    p, h2 { padding: 10px;}
+}
+
+.rodape {
+    background-color: rgb(231, 231, 231);
+}
+
+img { 
+    width: 100%;
+    border-radius: 4px;
+}
+
+.siga {
+    width: 50%;
+    text-align: center;
+}
+
+.menu {
+    background-color: black;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.contato {
+    width: 50%;
+    text-align: center;
+    border-right: solid black;
+}
+
+
+a { 
+    color: white;
+    text-decoration: none;
+}
+
+span {
+    display: none;
+}
+
+
+@media screen and (min-width: 630px) {
+
+    h1 { 
+        border-top: solid black;
+        border-bottom: solid black;
+    }
+
+    span {
+    display: inline;    
+    }
+}
+
+@media screen and (min-width:800px) {
+    .topo {
+        background-color: transparent;
+        border: none;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 30%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+        p, h2 { padding: 10px;}
+    }
+
+    img { width: 100%;}
+}
+
+
+</style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header class="topo">
+            <h1>🐱‍👤 <span class="ocultar">Exercício</span></h1>
+            <nav class="menu">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
+            </nav>
+        </header>
+
+        <main class="conteudo">
+            <article class="cachorro">
+                <img src="/imagens/cachorro.jpg" alt="Foto Cachorro">
+                <h2>Cachorro</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus adipisci minus cum maiores. Quidem alias, nulla illum voluptates voluptatem autem.</p>
+            </article>
+
+            <article class="cidade">
+                <img src="/imagens/cidade.jpg" alt="Foto Cidade">
+                <h2>Cidade</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus adipisci minus cum maiores. Quidem alias, nulla illum voluptates voluptatem autem.</p>
+            </article>
+
+            <article class="escadas">
+                <img src="/imagens/escadas.jpg" alt="Foto Escada">
+                <h2>Escadas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus adipisci minus cum maiores. Quidem alias, nulla illum voluptates voluptatem autem.</p>
+            </article>
+
+            <article class="trilhos">
+                <img src="/imagens/trilhos.jpg" alt="Foto Trilho">
+                <h2>Trilhos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus adipisci minus cum maiores. Quidem alias, nulla illum voluptates voluptatem autem.</p>
+            </article>
+
+            <article class="montanhas">
+                <img src="/imagens/montanhas.jpg" alt="Foto Montanha">
+                <h2>Montanhas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus adipisci minus cum maiores. Quidem alias, nulla illum voluptates voluptatem autem.</p>
+            </article>
+
+            <article class="luzes">
+                <img src="/imagens/luzes.jpg" alt="Foto Luzes">
+                <h2>Luzes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus adipisci minus cum maiores. Quidem alias, nulla illum voluptates voluptatem autem.</p>
+            </article>
+        </main>
+
+        <footer class="rodape">
+
+            <div class="contato">
+                <h3>Entre em contato conosco</h3>
+                <p> ☎ (11) 2135-0300</p>
+                <p> ✉ teste@teste.com</p>
+            </div>
+
+            <div class="siga">
+                <h3>Siga-nos!</h3>
+                <p>Facebook</p>
+                <p>linkedin</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
