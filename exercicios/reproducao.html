@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Reprodução</title>
+
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        body,
+        h1,
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .topo {
+            background-color: rgb(209, 224, 224);
+            /* width: 70%; */
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .menu {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: yellow;
+        }
+
+        .separar {
+            align-self: center;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            height: 30%;
+            padding: 8px;
+        }
+
+        .ocultar {
+            display: none;
+        }
+
+        main {
+            padding-top: 8px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        .conteudo {
+            width: 45%;
+            background-color: white;
+            margin: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 6px;
+        }
+
+        .conteudo p {
+            padding: 4px;
+        }
+
+        p,
+        h2 {
+            padding-left: 4px;
+        }
+
+        img {
+            width: 100%;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+
+        .externo {
+            /* background-color: aliceblue; */
+            width: 50%;
+            padding-top: 6px;
+        }
+
+        .rodape {
+            /* footer */
+            background-color: rgb(219, 219, 219);
+            display: flex;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contato {
+            width: 50%;
+            border-right: solid black;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        h3,
+        p {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: 630px) {
+
+            html {
+                font-size: 20px;
+            }
+
+            h1 {
+                margin-top: 4px;
+                margin-bottom: 4px;
+                border-top: solid black;
+                border-bottom: solid black;
+            }
+
+            .ocultar {
+                display: inline;
+            }
+
+            .menu a {
+                height: 50px;
+            }       
+        }
+
+        @media screen and (min-width: 800px) {
+
+            html {
+                font-size: 24px;
+            }
+
+            .conteudo {
+                width: 30%;
+            }
+
+            .menu {
+                background-color: transparent;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="topo">
+
+    <header class="menu">
+        <h1>🐱‍🚀 <span class="ocultar">Exercício</span></h1>
+        <nav class="separar">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="conteudo">
+            <img src="imagens/cachorro.jpg" alt="Foto Cachorro">
+            <h2>Cachorro</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit enim alias minus facilis
+                saepe odio eaque eius? Accusantium, harum.</p>
+        </article>
+
+        <article class="conteudo">
+            <img src="imagens/cidade.jpg" alt="Foto Cidade">
+            <h2>Cidade</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit enim alias minus facilis
+                saepe odio eaque eius? Accusantium, harum.</p>
+        </article>
+
+        <article class="conteudo">
+            <img src="imagens/escadas.jpg" alt="Foto Escada">
+            <h2>Escadas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit enim alias minus facilis
+                saepe odio eaque eius? Accusantium, harum.</p>
+        </article>
+
+        <article class="conteudo">
+            <img src="imagens/trilhos.jpg" alt="Foto Trilhos">
+            <h2>Trilhos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit enim alias minus facilis
+                saepe odio eaque eius? Accusantium, harum.</p>
+        </article>
+
+        <article class="conteudo">
+            <img src="imagens/montanhas.jpg" alt="Foto Montanhas">
+            <h2> Montanhas</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit enim alias minus facilis
+                saepe odio eaque eius? Accusantium, harum.</p>
+        </article>
+
+        <article class="conteudo">
+            <img src="imagens/luzes.jpg" alt="fotos Luzes">
+            <h2>Luzes </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum reprehenderit enim alias minus facilis
+                saepe odio eaque eius? Accusantium, harum.</p>
+        </article>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="contato">
+            <h3>Entre em contato conosco.</h3>
+            <p><a href="tel:(11)2135-0300">☎ (11) 2135-0300</a></p>
+            <p><a href="mailto:teste@teste.com">✉ teste@teste.com</a></p>
+        </div>
+
+        <div class="externo" class="borda">
+            <h3>Siga-nos!</h3>
+            <p><a href="https://www.facebook.com/?locale=pt_BR" target="_blank">Facebbook</a></p>
+            <p><a href="https://br.linkedin.com/" target="_blank">Linkedin</a></p>
+        </div>
+    </footer>
+
+
+    <!-- Estudar 
+    <div class="teste" style="display: flex; justify-content: space-between; align-items: center; background: yellow; height: 100px;">
+        <div class="contat">
+            Lorem, ipsum dolor.
+        </div>
+        <div class="separador1" style="width: 5px; height: 40px; background: black;"></div>
+        <div class="redes">
+            Lorem, ipsum dolor.
+        </div>
+    </div> -->
+
+</body>
+
+</html>
